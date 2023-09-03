@@ -159,22 +159,28 @@ nav ul a:hover {
     header nav ul {
         display: none;
         text-align: center;
-    }
-
-    header nav #check:checked~ul {
         display: flex;
         flex-direction: column;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.911);
+        left: -100%;
         top: 70px;
-        right: 0%;
-        left: 0%;
-        width: 90%;
-        margin: 0% auto;
-        z-index: 99;
-        padding: 20px 10px;
+        margin: 0%;
+        padding: 20px 0px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 99;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
     }
+
+    header nav #check:checked~ul {
+        left: 0%;
+        width: 100%;
+    }
+
     .dropdown-content{
         right: 40px;
         top: 20px;
