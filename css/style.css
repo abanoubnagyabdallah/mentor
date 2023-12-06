@@ -651,6 +651,14 @@ nav ul a:hover {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
+.courses .box{
+    transition: 0.7s ease-in-out;
+    -webkit-transition: 0.7s ease-in-out;
+    -moz-transition: 0.7s ease-in-out;
+    -ms-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
+}
+
 .courses .box .image {
     position: relative;
     width: 100%;
