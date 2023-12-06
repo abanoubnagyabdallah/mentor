@@ -613,6 +613,7 @@ nav ul a:hover {
 /* start popular courses */
 .popular__courses {
     margin-bottom: 100px;
+    overflow: hidden;
 }
 
 .popular__courses .popular__courses__header {
